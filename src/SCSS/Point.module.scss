@@ -1,0 +1,54 @@
+.marker {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+}
+.marker:before,
+.marker:after {
+  position: absolute;
+  content: '';
+  bottom: 2px;
+  left: -24px;
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50px 50px 50px 0px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.center {
+  width: 35px;
+  height: 35px;
+  left: -21px;
+  bottom: 5px;
+  border-radius: 50%;
+  background: #bb4848;
+  position: absolute;
+}
+
+.detail {
+  // display: none;
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 2.5px;
+  bottom: 2.5px;
+  border-radius: 50px 0px 0px 50px;
+  background: #282c37;
+  position: absolute;
+
+  h4,
+  p {
+    color: white;
+  }
+
+  .name {
+    width: max-content;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+}

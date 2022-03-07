@@ -1,0 +1,169 @@
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  .sidebar {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    font-size: 0.7rem;
+
+    .menu {
+      color: #8298a0;
+      list-style: none;
+      background-color: #313541f5;
+
+      li {
+        width: 6.5rem;
+        height: 5.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 1rem;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+        border-right: 1px solid rgba(26, 26, 26, 0.2);
+        border-left: 1px solid rgba(26, 26, 26, 0.2);
+      }
+
+      .browseActive {
+        background: #72cdd2;
+        color: white;
+      }
+    }
+
+    .browse {
+      width: 15.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      list-style: none;
+      background-color: #313541;
+      border-left: 1px solid rgba(26, 26, 26, 0.2);
+
+      li {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+        cursor: pointer;
+        padding: 0.5rem 0;
+
+        button {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 0.7rem;
+          color: white;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+        }
+
+        input {
+          width: 100%;
+          font-size: 0.7rem;
+          font-weight: bold;
+          text-align: start;
+          color: white;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem 0 0.5rem 1.25rem;
+        }
+      }
+
+      .filter {
+        button {
+          color: #8298a0;
+          border: 1px solid rgba(26, 26, 26, 0.2);
+          margin: 1.5rem 0;
+        }
+      }
+
+      .merlion {
+        input:focus {
+          color: #92d72e;
+          background: #282c37;
+        }
+      }
+
+      .marinaBay {
+        display: flex;
+        flex-direction: column;
+
+        .subActive {
+          margin-bottom: 0.5rem;
+
+          li {
+            width: 100%;
+            color: #8298a0;
+            border: none;
+            cursor: pointer;
+          }
+        }
+
+        .subNone {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+
+    .header {
+      height: 5.5rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f4f7fa;
+      padding: 0 2rem;
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        overflow: hidden;
+      }
+
+      // .map {
+      //   width: 100%;
+      //   height: 100%;
+      // }
+
+      .modal {
+        display: none;
+        position: relative;
+        z-index: 1;
+        overflow: auto;
+        width: 15.5rem;
+        background: #313541;
+        margin-top: 5.5rem;
+      }
+    }
+  }
+}
